@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Welcome</title>
+    <link th:href="@{styles.css}" rel="stylesheet" />
+</head>
+<body>
+    <h3 th:text="'Welcome' + ${user.username} + '!'"></h3>
+    <a th:href="@{/}">Select your spa services here!</a>
+</body>
+</html>
